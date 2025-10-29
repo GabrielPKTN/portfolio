@@ -3,3 +3,66 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+    --fira-code: "Fira Code", monospace;
+    --dela-gothic: "Dela Gothic One", sans-serif;
+    --encode-sans: "Encode Sans", sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+}
+
+header {
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+        font-size: 1rem;
+        font-family: var(--encode-sans);
+        font-weight: 400;
+    }
+
+    .links-header {
+
+        width: auto;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        .link-header {
+
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.75rem;
+
+            img {
+                width: 20%;
+            }
+
+            a {
+                color: var(--secondary-color);
+            
+                text-decoration: none;
+                font-family: var(--encode-sans);
+                font-weight: 100;
+            }
+        }
+
+    }
+
+}
