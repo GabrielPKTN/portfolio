@@ -162,6 +162,8 @@ main {
             display: flex;
             width: 100%;
 
+            align-items: center;
+
             font-family: var(--dela-gothic);
             font-size: 0.8rem;
             text-align: center;
@@ -187,6 +189,7 @@ main {
                 gap: 10px;
 
 
+
                 .container-stack-logo-nome {
                     
                     display: flex;
@@ -194,11 +197,6 @@ main {
                     align-items: center;
                     justify-content: center;
                     gap: 10px;
-
-                    .nome-stack {
-                        font-family: var(--dela-gothic);
-                        font-size: 1.25rem;
-                    }
                     
                     .container-stack-logo {
                         border: 2px solid var(--secondary-color);
@@ -219,22 +217,39 @@ main {
 
             }
 
-            .atributos-stack {
-
-                font-family: var(--encode-sans);
-                font-weight: 100;
-
+            .nome-atributos-stack {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 align-items: center;
 
-                gap: 10px;
-
-                .atributo-stack {
+                gap: 5px;
+                
+                .nome-stack {
+                    font-family: var(--dela-gothic);
+                    font-size: 1.25rem;
                     width: 80%;
                 }
 
+                .atributos-stack {
+
+                    font-family: var(--encode-sans);
+                    font-weight: 100;
+    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+    
+                    gap: 10px;
+    
+                    .atributo-stack {
+                        width: 80%;
+                    }
+    
+                }
+
             }
+            
 
         }
 
@@ -359,7 +374,13 @@ main {
 
 footer {
 
-    padding-top: 12rem;
+    padding-block: 12rem;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4rem;
 
     .mensagem {
         display: flex;
@@ -432,6 +453,140 @@ footer {
             img {
                 width: 1.5rem;
             }
+
+        }
+
+    }
+
+}
+
+@media  (min-width: 740px) {
+
+    header {
+
+        h2 {
+
+            font-size: 1.5rem;
+
+        }
+
+        .links-header {
+
+            .link-header {
+
+                img {
+
+                    width: 25%;
+
+                }
+
+            }
+
+        }
+
+    }
+    
+    main {
+
+        .slogan {
+
+            font-size: 1.5rem;
+
+        }
+
+        .image-apresentacao {
+
+            width: 15rem;
+            height: 30rem;
+
+        }
+
+        .apresentacao-texto {
+
+            width: 80%;
+            font-size: 1.25rem;
+            
+        }
+
+        .stacks {
+
+            .code {
+                display: flex;
+                justify-content: center;
+                font-size: 1rem;
+                height: 15rem;
+            }
+            
+            .container-stacks {
+
+                .titulo-secao-stacks {
+                    justify-content: center;
+                    font-size: 1.20rem;
+                }
+
+                .stack {
+                    flex-direction: row;
+                }
+
+            }
+
+        }
+
+
+        .projetos {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            gap: 50px;
+            padding-block: 4rem;
+
+            .slogan.projects {
+                font-size: 4rem;
+            }
+
+            .card-projeto {
+
+                width: 60%;
+
+            }
+
+        }
+
+    }
+
+    footer {
+
+        .mensagem {
+
+            .mensagem-like {
+                font-size: 3rem;
+            }
+
+            .mensagem-proposta {
+                font-size: 2rem;
+            }
+
+        }
+
+        .slogan.footer {
+            font-size: 4rem;
+        }
+
+        .link-footer {
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+
+                width: 50px;
+                height: 25px;
+
+            } 
 
         }
 
