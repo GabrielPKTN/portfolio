@@ -113,33 +113,46 @@ main {
 
         }
 
-        .image-apresentacao {
 
-            border-radius: 20px;
-            width: 17rem;
-            height: 8rem;
-
-            img {
-                width: 100%;
-                height: 100%;
-
-                border-radius: 5px;
-                object-fit: cover;
-            }
-
-        }
-
-        .apresentacao-texto {
-
-            font-family: var(--encode-sans);
-            font-weight: 600;
+        .main-apresentacao {
 
             display: flex;
             flex-direction: column;
+            align-items: center;
+            
+            gap: 30px;
 
-            gap: 20px;
+
+            .image-apresentacao {
+
+                border-radius: 20px;
+                width: 17rem;
+                height: 8rem;
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+    
+                    border-radius: 5px;
+                    object-fit: cover;
+                }
+    
+            }
+    
+            .apresentacao-texto {
+    
+                font-family: var(--encode-sans);
+                font-weight: 600;
+    
+                display: flex;
+                flex-direction: column;
+    
+                gap: 20px;
+    
+            }
 
         }
+        
     }
 
     .stacks {
@@ -182,6 +195,16 @@ main {
 
             width: 100%;
 
+            .container-stack-grid {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                gap: 40px;
+
+            }
+
             .stack {
 
                 display: flex;
@@ -189,6 +212,14 @@ main {
                 gap: 10px;
 
 
+                .nome-atributos-stack {
+                    
+                    span {
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                }
 
                 .container-stack-logo-nome {
                     
@@ -374,7 +405,7 @@ main {
 
 footer {
 
-    padding-block: 12rem;
+    padding-block: 6rem;
 
     display: flex;
 
@@ -526,6 +557,17 @@ footer {
 
                 .stack {
                     flex-direction: row;
+
+                    
+
+                    .nome-atributos-stack {
+
+                        span {
+                            align-items: start;
+                            justify-content: start;
+                        }
+
+                    }
                 }
 
             }
@@ -591,5 +633,133 @@ footer {
         }
 
     }
+
+}
+
+@media  (min-width: 1024px) {
+
+    body {
+        padding: 4rem;
+    }
+
+    header {
+
+        h2 {
+            font-size: 2.25rem;
+        }
+
+        .links-header {
+            
+            gap: 2rem;
+
+            .link-header {
+                font-size: 1.5rem;
+
+                img {
+                    width: 2rem;
+                }
+            }
+            
+
+        }
+
+    }
+
+    main {
+
+        padding-top: 4rem;
+
+        .apresentacao {
+            
+            .slogan {
+                font-size: 3rem;
+            }
+
+            .main-apresentacao {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                gap: 30px;
+
+                .image-apresentacao {
+                    
+                    width: 80%;
+                    height: 30rem;
+
+                    
+                    border-radius: 30px;
+
+                    img {
+                        border-radius: 30px;
+                    }
+
+                }
+
+                .apresentacao-texto {
+                    width: 40%;
+                }
+
+            }
+
+        }
+
+        .stacks {
+
+            .code {
+                display: block;
+                font-size: 1.5rem;
+                height: 24rem;
+            }
+
+            .container-stacks {
+
+                .titulo-secao-stacks {
+                    font-size: 2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .container-stack-grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 30px;
+
+                }
+
+            }
+
+        }
+
+        .projetos {
+
+            .card-projeto {
+
+                .img-description {
+
+                    .container-descricao {
+                        span {
+                            font-size: 1.5rem;
+                        }
+                        p {
+                            font-size: 1.25rem;
+                        }
+                    }
+
+                }
+
+                .container-buttons-card {
+                    display: flex;
+                    padding-left: 30px;
+                }
+
+            }
+
+        }
+
+    }
+
 
 }
