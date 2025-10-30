@@ -356,3 +356,85 @@ main {
     }
 
 }
+
+footer {
+
+    padding-top: 12rem;
+
+    .mensagem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        font-family: var(--dela-gothic);
+
+        width: 100%;
+
+        .mensagem-like {
+            font-size: 1.25rem;
+        }
+
+        .mensagem-proposta {
+            font-size: 1rem;
+        }
+
+    }
+
+    .slogan.footer {
+
+        padding-top: 20px;
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        font-family: var(--dela-gothic);
+        font-size: 1.5rem;
+
+        .slogan-first.footer {
+            text-align: center;
+            z-index: 2;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: var(--primary-color);
+        }
+
+        .slogan-second.footer {
+            text-align: center;
+            padding-top: 4px;
+            padding-right: 4px;
+            position: absolute;
+            color: var(--primary-color);
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: var(--secondary-color);
+        }
+    }
+
+    .container-redes-sociais {
+
+        padding-top: 40px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        font-family: var(--encode-sans);
+        font-weight: 600;
+
+
+        .link-footer {
+
+            display: flex;
+            gap: 10px;
+
+            img {
+                width: 1.5rem;
+            }
+
+        }
+
+    }
+
+}
